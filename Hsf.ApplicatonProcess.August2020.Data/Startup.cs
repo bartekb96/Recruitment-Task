@@ -28,6 +28,9 @@ namespace Hsf.ApplicatonProcess.August2020.Data
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
+
+            services.AddScoped<IApplicantRepository, ApplicantRepository>();
+            
             services.AddControllers();
         }
 
