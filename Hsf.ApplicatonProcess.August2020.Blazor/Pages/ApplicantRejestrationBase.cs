@@ -5,10 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 {
     public class ApplicantRejestrationBase : ComponentBase
     {
+        protected Applicant applicant = new Applicant();
+
         public IEnumerable<Applicant> Applicants { get; set; }
 
         private void LoadApplicants()
@@ -51,5 +54,11 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 
             Applicants = new List<Applicant> { a1, a2, a3 };
         }
+
+        protected void SaveApplicant()
+        {
+
+        }
     }
+
 }

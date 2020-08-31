@@ -72,6 +72,13 @@ using Hsf.ApplicatonProcess.August2020.Blazor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\_Imports.razor"
+using Blazored.FluentValidation;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998

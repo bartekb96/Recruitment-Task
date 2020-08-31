@@ -1,52 +1,73 @@
 ﻿@page "/"
 @inherits ApplicantRejestrationBase
+@using Blazored.FluentValidation
 
 <div id="header">
     <center><h3>Applicant Form</h3></center>
 </div>
 
-<div id="table">
-    <table class="form-table" align="left">
-        <tbody>
-            <tr>
-                <td>Firts Name</td>
-                <td><input type="text" class="table-input" placeholder="insert your name..."></td>
-            </tr>
-            <tr>
-                <td>Family Name</td>
-                <td><input type="text" class="table-input" placeholder="insert family name..."></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td><input type="text" class="table-input" placeholder="insert address..."></td>
-            </tr>
-            <tr>
-                <td>Country</td>
-                <td><input type="text" class="table-input" placeholder="insert country..."></td>
-            </tr>
-            <tr>
-                <td>E-mail address</td>
-                <td><input type="text" class="table-input" placeholder="insert e-mail.."></td>
-            </tr>
-            <tr>
-                <td>Age</td>
-                <td><input type="text" class="table-input" placeholder="insert age..."></td>
-            </tr>
-            <tr>
-                <td>Are you hired?</td>
-                <td>
-                    <input type="radio" id="Yes" value="Yes" name="Hired"><label for="Yes">Yes</label>
-                    <input type="radio" id="No" value="No" name="Hired"><label for="No">No</label>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<EditForm Model="@applicant" OnValidSubmit="@SaveApplicant">
+    <FluentValidationValidator />
+    <ValidationSummary />
 
-<div id="buttons">
-    <center>
-        <button class="btn custom-btn">Reset Data</button>
-        <button class="btn custom-btn">Submit</button>
-    </center>
-</div>
+    <div id="table">
+
+        <table class="form-table" align="left">
+            <tbody>
+                <tr>
+                    <td>Firts Name</td>
+                    <td>
+                        <InputText @bind-Value="@applicant.Name" placeholder="insert your name..."></InputText>
+                        <ValidationMessage For="@(()=> applicant.Name)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Family Name</td>
+                    <td>
+                        <InputText @bind-Value="@applicant.FamilyName" placeholder="insert family name..."></InputText>
+                        <ValidationMessage For="@(()=> applicant.FamilyName)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <InputText @bind-Value="@applicant.Address" placeholder="insert address..."></InputText>
+                        <ValidationMessage For="@(()=> applicant.Address)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input type="text" class="table-input" placeholder="insert country..."></td>
+                </tr>
+                <tr>
+                    <td>E-mail address</td>
+                    <td><input type="text" class="table-input" placeholder="insert e-mail.."></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>
+                        <InputNumber @bind-Value="@applicant.Age" placeholder="insert age..."></InputNumber>
+                        <ValidationMessage For="@(()=> applicant.Age)" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Are you hired?</td>
+                    <td>
+                        <input type="radio" id="Yes" value="Yes" name="Hired"><label for="Yes">Yes</label>
+                        <input type="radio" id="No" value="No" name="Hired"><label for="No">No</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="buttons">
+        <center>
+            <button class="btn custom-btn">Reset Data</button>
+            <button class="btn custom-btn">Submit</button>
+        </center>
+    </div>
+
+</EditForm>
 
