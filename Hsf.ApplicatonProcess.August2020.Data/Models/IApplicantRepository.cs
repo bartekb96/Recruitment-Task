@@ -12,6 +12,6 @@ namespace Hsf.ApplicatonProcess.August2020.Data.Models
         Task<Applicant> GetApplicant(int applicantId);
         Task<Applicant> AddApplicant(Applicant applicant);
         Task<Applicant> UpdateApplicant(Applicant applicant);
-        void DeleteApplicant(int applicantId);
+        Task<Applicant> DeleteApplicant(int applicantId);
     }
 }

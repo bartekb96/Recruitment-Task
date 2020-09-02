@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Hsf.ApplicatonProcess.August2020.Blazor.services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +28,9 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddHttpClient<IApplicantService, ApplicantService>(client => {
+                client.BaseAddress = new Uri("https://localhost:44357/");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -54,14 +54,16 @@ namespace Hsf.ApplicatonProcess.August2020.Data.Models
             return null;
         }
 
-        public async void DeleteApplicant(int applicantId)
+        public async Task<Applicant> DeleteApplicant(int applicantId)
         {
             var result = await appDbContext.Applicants.FirstOrDefaultAsync(a => a.ID == applicantId);
             if(result != null)
             {
                 appDbContext.Applicants.Remove(result);
                 await appDbContext.SaveChangesAsync();
+                return result;
             }
+            return null;
         }
     }
 }

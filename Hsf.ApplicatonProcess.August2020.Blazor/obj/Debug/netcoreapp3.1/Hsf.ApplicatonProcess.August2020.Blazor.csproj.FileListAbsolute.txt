@@ -63,6 +63,8 @@ C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonPro
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Blazor.csproj.CoreCompileInputs.cache
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Blazor.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Hsf.ApplicatonProcess.August2020.Blazor.dll

@@ -74,6 +74,50 @@ namespace Hsf.ApplicatonProcess.August2020.Data.Controllers
             }
         }
 
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Applicant>> UpdateApplicant(int ID, Applicant applicant)
+        {
+            try
+            {
+                if(ID != applicant.ID)
+                {
+                    return BadRequest("Wrong applicant ID");
+                }
+
+                var applicantToUpdate = await applicantRepository.GetApplicant(ID);
+
+                if (applicantToUpdate == null)
+                {
+                    return NotFound($"Applicant with id = {ID} not found");
+                }
+
+                return await applicantRepository.UpdateApplicant(applicant);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Updating applicant error!");
+            }
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Applicant>> DeleteApplicant(int ID)
+        {
+            try
+            {
+                var applicantToDelete = await applicantRepository.GetApplicant(ID);
+
+                if (applicantToDelete == null)
+                {
+                    return NotFound($"Applicant with id = {ID} not found");
+                }
+
+                return await applicantRepository.DeleteApplicant(ID);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Deleting applicant error!");
+            }
+        }
     }
 
 }

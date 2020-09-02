@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Nyi4V8CyAXeoOVrXmz5bCDhESwz8Gh2sU9aFekRAnclDnXPxcoCRnXSE4Taq19laDCXrL9i8mtuJmmvc1MyqvA==",
+  "dgSpecHash": "wAakSyVC0eqwXOLF7b26TqQnorJC3dKsHgie4061rcZ3rMDn5oduS41j1/6s8F+1czNdOjt/BdGrdHY03VFQ0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\Hsf.ApplicatonProcess.Application\\Hsf.ApplicatonProcess.August2020.Blazor\\Hsf.ApplicatonProcess.August2020.Blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bartek\\.nuget\\packages\\blazored.fluentvalidation\\1.3.1\\blazored.fluentvalidation.1.3.1.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\fluentvalidation\\9.0.0\\fluentvalidation.9.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.5\\microsoft.aspnetcore.authorization.3.1.5.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.blazor.httpclient\\3.2.0-preview3.20168.3\\microsoft.aspnetcore.blazor.httpclient.3.2.0-preview3.20168.3.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.5\\microsoft.aspnetcore.components.3.1.5.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.5\\microsoft.aspnetcore.components.analyzers.3.1.5.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.5\\microsoft.aspnetcore.components.forms.3.1.5.nupkg.sha512",
@@ -35,7 +36,8 @@
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.jsinterop\\3.1.5\\microsoft.jsinterop.3.1.5.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\Bartek\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
