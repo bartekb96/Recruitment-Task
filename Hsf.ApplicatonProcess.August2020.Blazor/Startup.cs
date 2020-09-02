@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Blazored.Modal;
 
 namespace Hsf.ApplicatonProcess.August2020.Blazor
 {
@@ -31,11 +32,13 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor
             services.AddHttpClient<IApplicantService, ApplicantService>(client => {
                 client.BaseAddress = new Uri("https://localhost:44357/");
             });
+            services.AddBlazoredModal();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

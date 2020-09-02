@@ -16,6 +16,9 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 
         protected Applicant applicant = new Applicant();
 
+        public bool IsSubmitDialogVisible { get; set; } = false;
+        public bool IsResetDialogVisible { get; set; } = false;
+
         public IEnumerable<Applicant> Applicants { get; set; }
 
         protected async Task SaveApplicant()
