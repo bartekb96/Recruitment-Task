@@ -59,3 +59,14 @@ C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonPro
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.StaticWebAssets.xml
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Blazored.Modal.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.MvcApplicationPartsAssemblyInfo.cache

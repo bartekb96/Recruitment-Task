@@ -1,0 +1,24 @@
+﻿<div>
+    <h3>Do You really want to reset input fields?</h3>
+</div>
+
+<div>
+    <center>
+    <button class="btn custom-btn" @onclick="YesClick">Yes</button>
+    <button class="btn custom-btn" @onclick="NoClick">No</button>
+    </center>
+</div>
+
+@code {
+    [CascadingParameter] BlazoredModalInstance BlazoredModal { get; set; }
+
+    void YesClick()
+    {
+
+    }
+
+    void NoClick()
+    {
+        BlazoredModal.Close();
+    }
+}

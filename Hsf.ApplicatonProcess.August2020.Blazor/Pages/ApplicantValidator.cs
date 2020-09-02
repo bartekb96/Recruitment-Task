@@ -14,7 +14,6 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 {
     public class ApplicantValidator : AbstractValidator<Applicant>
     {
-
         public ApplicantValidator()
         {
             //Name tules
@@ -41,8 +40,7 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
             RuleFor(applicant => applicant.Age).LessThanOrEqualTo(60).WithMessage("You must be maximum 60 years old");
 
             //Hired status rules
-            RuleFor(applicant => applicant.Hired).NotNull().WithMessage("Please select Your hired status");    
-            
+            RuleFor(applicant => applicant.Hired).NotNull().WithMessage("Please select Your hired status");
         }
 
         private bool IsRealCountry(Applicant applicant, string CountryOfOrigin)

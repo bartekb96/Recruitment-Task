@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsf.ApplicatonProcess.Augus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsf.ApplicatonProcess.August2020.Domain", "Hsf.ApplicatonProcess.August2020.Domain\Hsf.ApplicatonProcess.August2020.Domain.csproj", "{91D5D3A5-211E-4816-BEEE-1E6F55367A69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsf.ApplicatonProcess.August2020.Data", "Hsf.ApplicatonProcess.August2020.Data\Hsf.ApplicatonProcess.August2020.Data.csproj", "{775A0488-E300-4705-B475-4B9540C88C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hsf.ApplicatonProcess.August2020.Data", "Hsf.ApplicatonProcess.August2020.Data\Hsf.ApplicatonProcess.August2020.Data.csproj", "{775A0488-E300-4705-B475-4B9540C88C0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

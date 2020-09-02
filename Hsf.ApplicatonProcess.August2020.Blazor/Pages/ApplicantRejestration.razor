@@ -1,7 +1,7 @@
 ﻿@page "/"
 @inherits ApplicantRejestrationBase
 @using Blazored.FluentValidation
-
+@inject IModalService Modal
 
 <div id="header">
     <center><h3>Applicant Form</h3></center>
@@ -70,11 +70,9 @@
 
     <div id="buttons">
         <center>
-            <button class="btn custom-btn">Reset Data</button>
+            <button class="btn custom-btn"  @onclick="ShowResetAcceptModal">Reset Data</button>
             <button class="btn custom-btn" type="submit">Submit</button>
         </center>
     </div>
 
 </EditForm>
-
-

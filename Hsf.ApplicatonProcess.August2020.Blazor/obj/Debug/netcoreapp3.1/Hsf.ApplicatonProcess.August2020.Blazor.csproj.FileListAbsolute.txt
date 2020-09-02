@@ -65,3 +65,17 @@ C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonPro
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ApplicantAcceptModal.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Blazor.StaticWebAssets.xml
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\bin\Debug\netcoreapp3.1\Blazored.Modal.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Blazor.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Hsf.ApplicatonProcess.August2020.Blazor.dll
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\App.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\ApplicantAcceptModal.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\ApplicantRejestration.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\_Imports.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\RazorDeclaration\Pages\ResetAcceptModal.razor.g.cs
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Blazor\obj\Debug\netcoreapp3.1\Razor\Pages\ResetAcceptModal.razor.g.cs
