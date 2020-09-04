@@ -19,8 +19,10 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 
         protected Applicant applicant = new Applicant();
 
-        public bool IsSubmitDialogVisible { get; set; } = false;
-        public bool IsResetDialogVisible { get; set; } = false;
+        protected bool IsApplicantAcceptModalActive { get; set; } = false;
+        protected bool IsResetAcceptModalDisabled { get; set; } = true;
+
+        public string Name { get; set; } = "";
 
         public IEnumerable<Applicant> Applicants { get; set; }
 
@@ -30,11 +32,31 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
             Modal.Show<ApplicantAcceptModal>("Applicant added");
         }
 
-        protected async Task ShowResetAcceptModal()
+        protected void ShowResetAcceptModal()
         {
-
+            Modal.Show<ResetAcceptModal>("Are You sure?");
         }
 
+        public void CheckFormState()
+        {
+            if (string.IsNullOrEmpty(applicant.Name) &&
+               string.IsNullOrEmpty(applicant.FamilyName) &&
+               string.IsNullOrEmpty(applicant.Address) &&
+               string.IsNullOrEmpty(applicant.CountryOfOrigin) &&
+               string.IsNullOrEmpty(applicant.EMailAdress))
+            {
+                this.IsResetAcceptModalDisabled = true;
+            }
+            else
+            {
+                this.IsResetAcceptModalDisabled = false;
+            }
+        }
+
+        public void test()
+        {
+            this.IsResetAcceptModalDisabled = !this.IsResetAcceptModalDisabled;
+        }
     }
 
 }
