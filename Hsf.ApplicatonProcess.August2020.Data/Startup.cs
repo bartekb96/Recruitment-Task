@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Hsf.ApplicatonProcess.August2020.Data.Models;
 using Microsoft.AspNetCore.Builder;
@@ -37,9 +38,30 @@ namespace Hsf.ApplicatonProcess.August2020.Data
             services.AddControllers();
 
             services.AddMvc();
-            services.AddSwaggerGen(options =>
+            services.AddSwaggerGen(c =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo{ Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Applicant API",
+                    Version = "v1",
+                    Description = "An API to make CRUD operations on Applicants",
+                    TermsOfService = new Uri("about:blank"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Bartosz Bednarek",
+                        Email = "",
+                        Url = new Uri("about:blank"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Handshake license",
+                        Url = new Uri("about:blank"),
+                    }
+                });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 

@@ -384,7 +384,7 @@
       "System.ComponentModel.Annotations/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/_._": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
         },
         "runtime": {
           "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
@@ -411,6 +411,9 @@
       "Hsf.ApplicatonProcess.August2020.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "system.componentmodel.annotations": "4.7.0"
+        },
         "compile": {
           "bin/placeholder/Hsf.ApplicatonProcess.August2020.Domain.dll": {}
         },

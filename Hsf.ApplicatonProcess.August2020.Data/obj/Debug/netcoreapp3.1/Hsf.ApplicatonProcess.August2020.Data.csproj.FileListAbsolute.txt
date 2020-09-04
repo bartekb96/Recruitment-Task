@@ -83,3 +83,4 @@ C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonPro
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.csproj.CoreCompileInputs.cache
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\obj\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bartek\source\repos\Hsf.ApplicatonProcess.Application\Hsf.ApplicatonProcess.August2020.Data\bin\Debug\netcoreapp3.1\Hsf.ApplicatonProcess.August2020.Data.xml
