@@ -22,14 +22,14 @@ namespace Hsf.ApplicatonProcess.August2020.Data.Controllers
         }
 
         /// <summary>
-        /// Gets the list of all Applicants
+        /// Gets the list of all Applicants.
         /// </summary>
         /// <remarks>
         /// Sample request:
         ///     GET api/Applicants
         /// </remarks>
         /// <returns>The list of Applicants</returns>
-        // GET: api/Applicants
+        /// GET: api/Applicants
         /// <response code="200">Returns list of all Applicants</response>
         /// <response code="500">If here was problem with server</response>   
         [HttpGet]

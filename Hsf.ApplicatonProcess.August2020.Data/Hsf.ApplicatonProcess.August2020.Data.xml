@@ -5,6 +5,15 @@
     </assembly>
     <members>
         <member name="M:Hsf.ApplicatonProcess.August2020.Data.Controllers.ApplicantsController.GetApplicants">
+            <summary>
+            Gets the list of all Applicants.
+            </summary>
+            <remarks>
+            Sample request:
+                GET api/Applicants
+            </remarks>
+            <returns>The list of Applicants</returns>
+            GET: api/Applicants
             <response code="200">Returns list of all Applicants</response>
             <response code="500">If here was problem with server</response>   
         </member>

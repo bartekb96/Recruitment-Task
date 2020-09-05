@@ -7,7 +7,7 @@
     <center><h3>Applicant Form</h3></center>
 </div>
 
-<EditForm Model="@applicant" OnValidSubmit="@SaveApplicant">
+<EditForm OnValidSubmit="@SaveApplicant" EditContext="@editContext">
     <FluentValidationValidator />
     <ValidationSummary />
 
@@ -18,35 +18,35 @@
                 <tr>
                     <td>Firts Name</td>
                     <td>
-                        <InputText @bind-Value="@applicant.Name" @oninput="CheckFormState" placeholder="insert your name..."></InputText>
+                        <InputText @bind-Value="@applicant.Name" placeholder="insert your name..."></InputText>
                         <ValidationMessage For="@(()=> applicant.Name)" />
                     </td>
                 </tr>
                 <tr>
                     <td>Family Name</td>
                     <td>
-                        <InputText @bind-Value="@applicant.FamilyName" @oninput="CheckFormState" placeholder="insert family name..."></InputText>
+                        <InputText @bind-Value="@applicant.FamilyName" placeholder="insert family name..."></InputText>
                         <ValidationMessage For="@(()=> applicant.FamilyName)" />
                     </td>
                 </tr>
                 <tr>
                     <td>Address</td>
                     <td>
-                        <InputText @bind-Value="@applicant.Address" @oninput="CheckFormState" placeholder="insert address..."></InputText>
+                        <InputText @bind-Value="@applicant.Address" placeholder="insert address..."></InputText>
                         <ValidationMessage For="@(()=> applicant.Address)" />
                     </td>
                 </tr>
                 <tr>
                     <td>Country</td>
                     <td>
-                        <InputText @bind-Value="@applicant.CountryOfOrigin" @oninput="CheckFormState" placeholder="insert country..."></InputText>
+                        <InputText @bind-Value="@applicant.CountryOfOrigin" placeholder="insert country..."></InputText>
                         <ValidationMessage For="@(()=> applicant.CountryOfOrigin)" />
                     </td>
                 </tr>
                 <tr>
                     <td>E-mail address</td>
                     <td>
-                        <InputText @bind-Value="@applicant.EMailAdress" @oninput="CheckFormState" placeholder="insert e-mail..."></InputText>
+                        <InputText @bind-Value="@applicant.EMailAdress" placeholder="insert e-mail..."></InputText>
                         <ValidationMessage For="@(()=> applicant.EMailAdress)" />
                     </td>
                 </tr>

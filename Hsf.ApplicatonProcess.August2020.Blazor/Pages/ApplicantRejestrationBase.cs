@@ -2,6 +2,7 @@
 using Hsf.ApplicatonProcess.August2020.Blazor.services;
 using Hsf.ApplicatonProcess.August2020.Domain;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,12 +20,33 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
 
         protected Applicant applicant = new Applicant();
 
+        protected EditContext editContext;
+
         protected bool IsApplicantAcceptModalActive { get; set; } = false;
         protected bool IsResetAcceptModalDisabled { get; set; } = true;
 
-        public string Name { get; set; } = "";
-
         public IEnumerable<Applicant> Applicants { get; set; }
+
+        protected override void OnInitialized()
+        {
+            this.editContext = new EditContext(this.applicant);
+            this.editContext.OnFieldChanged += (sender, e) =>
+            {
+                if (string.IsNullOrEmpty(applicant.Name) &&
+                    string.IsNullOrEmpty(applicant.FamilyName) &&
+                    string.IsNullOrEmpty(applicant.Address) &&
+                    string.IsNullOrEmpty(applicant.CountryOfOrigin) &&
+                    string.IsNullOrEmpty(applicant.EMailAdress))
+                {
+                    this.IsResetAcceptModalDisabled = true;
+                }
+                else
+                {
+                    this.IsResetAcceptModalDisabled = false;
+                }
+                this.StateHasChanged();
+            };
+        }
 
         protected async Task SaveApplicant()
         {
