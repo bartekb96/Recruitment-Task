@@ -13,7 +13,7 @@ To build and launch the project follow the steps bellow:
   a) Blazored.FluentValidation\
   b) Blazored.Modal\
   c) Microsoft.AspNetCore.Blazor.HttpClient\
-  d) Microsoft.EntityFrameworkCore.Tools\
+  d) Microsoft.EntityFrameworkCore.Tools
   
   In "Hsf.ApplicatonProcess.August2020.Data" project you need to install:\
   a) Blazored.Modal\
@@ -21,11 +21,11 @@ To build and launch the project follow the steps bellow:
   c) Microsoft.EntityFrameworkCore.Design\
   d) Microsoft.EntityFrameworkCore.SqlServer\
   e) Swashbuckle.AspNetCore\
-  f) Swashbuckle.AspNetCore.Filters\
+  f) Swashbuckle.AspNetCore.Filters
   
   In "Hsf.ApplicatonProcess.August2020.Domain" project you need to install:\
   a) NETStandard.Library\
-  b) System.ComponentModel.Annotations\
+  b) System.ComponentModel.Annotations
   
 3) Once NuGet packages are installed you need to set startup projects. To do that rightclick on the solution name in "solution explorer" on your right hand side in Visual Studio. Then pick "set startup projects" from context menue. After that dialogue window should appear. In this window select "multiple startup projects" and select "startup" option near to the "Hsf.ApplicatonProcess.August2020.Data" and "Hsf.ApplicatonProcess.August2020.Blazor" projects. It will provide that both API endpoint and user interface will appear in the browser after you run project. You also need to make "Hsf.ApplicatonProcess.August2020.Data" project be higher in the hierarchy than "Hsf.ApplicatonProcess.August2020.Blazor". To do that use up and down arrows on your right hand side. "Hsf.ApplicatonProcess.August2020.Blazor" uses "Hsf.ApplicatonProcess.August2020.Data" so "Hsf.ApplicatonProcess.August2020.Data" need to be run first.
 
