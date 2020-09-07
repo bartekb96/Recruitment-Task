@@ -8,7 +8,7 @@ To build and launch the project follow the steps bellow:
   -Hsf.ApplicatonProcess.August2020.Data \
   -Hsf.ApplicatonProcess.August2020.Domain\
   -Hsf.ApplicatonProcess.August2020.Blazor\
-  To add Nuget package into the project, you need to mouse rightclick on the selected project in the "Solution Explorer" on your right hand side in Visual Studio. Then sellect "menage nuget packages" from context menue. Then click "browse" and type name of nuget package you want to install. Pick package from the list and click "Install".
+  To add Nuget package into the project, you need to mouse rightclick on the selected project in the "Solution Explorer" on your right hand side in Visual Studio. Then sellect "menage nuget packages" from context menue. Then click "browse" and type name of nuget package you want to install. Pick package from the list and click "Install".\
   In "Hsf.ApplicatonProcess.August2020.Blazor" project you need to install:\
   a) Blazored.FluentValidation\
   b) Blazored.Modal\
