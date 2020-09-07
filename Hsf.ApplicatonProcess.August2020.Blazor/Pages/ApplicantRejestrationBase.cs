@@ -16,13 +16,14 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
         public IApplicantService ApplicantService { get; set; }
 
         [Inject]
+        [CascadingParameter]
         public IModalService Modal { get; set; }
 
         protected Applicant applicant = new Applicant();
 
         protected EditContext editContext;
 
-        protected bool IsApplicantAcceptModalActive { get; set; } = false;
+        protected bool IsApplicantAcceptModalDisabled { get; set; } = true;
         protected bool IsResetAcceptModalDisabled { get; set; } = true;
 
         public IEnumerable<Applicant> Applicants { get; set; }
@@ -44,6 +45,20 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
                 {
                     this.IsResetAcceptModalDisabled = false;
                 }
+
+                if (string.IsNullOrEmpty(applicant.Name) ||
+                    string.IsNullOrEmpty(applicant.FamilyName) ||
+                    string.IsNullOrEmpty(applicant.Address) ||
+                    string.IsNullOrEmpty(applicant.CountryOfOrigin) ||
+                    string.IsNullOrEmpty(applicant.EMailAdress))
+                {
+                    this.IsApplicantAcceptModalDisabled = true;
+                }
+                else
+                {
+                    this.IsApplicantAcceptModalDisabled = false;
+                }
+
                 this.StateHasChanged();
             };
         }
@@ -54,31 +69,21 @@ namespace Hsf.ApplicatonProcess.August2020.Blazor.Pages
             Modal.Show<ApplicantAcceptModal>("Applicant added");
         }
 
-        protected void ShowResetAcceptModal()
+        protected async Task ShowResetAcceptModal()
         {
-            Modal.Show<ResetAcceptModal>("Are You sure?");
-        }
+            var modal = Modal.Show<ResetAcceptModal>("Are You sure?");
+            var modalResult = await modal.Result;
 
-        public void CheckFormState()
-        {
-            if (string.IsNullOrEmpty(applicant.Name) &&
-               string.IsNullOrEmpty(applicant.FamilyName) &&
-               string.IsNullOrEmpty(applicant.Address) &&
-               string.IsNullOrEmpty(applicant.CountryOfOrigin) &&
-               string.IsNullOrEmpty(applicant.EMailAdress))
+            if (!modalResult.Cancelled)
             {
-                this.IsResetAcceptModalDisabled = true;
+                @applicant.Name = "";
+                @applicant.FamilyName = "";
+                @applicant.Address = "";
+                @applicant.CountryOfOrigin = "";
+                @applicant.EMailAdress = "";
+                @applicant.Age = 0;
+                @applicant.Hired = false;
             }
-            else
-            {
-                this.IsResetAcceptModalDisabled = false;
-            }
-        }
-
-        public void test()
-        {
-            this.IsResetAcceptModalDisabled = !this.IsResetAcceptModalDisabled;
         }
     }
-
 }

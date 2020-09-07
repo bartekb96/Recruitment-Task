@@ -70,12 +70,10 @@
 
     <div id="buttons">
         <center>
-            <button class="btn custom-btn" type="submit">Submit</button>
+            <button class="btn custom-btn" type="submit" @bind-disabled="IsApplicantAcceptModalDisabled" @bind-disabled:event="onchange">Submit</button>
         </center>
     </div>
 
 </EditForm>
 
 <button class="btn custom-btn" @onclick="ShowResetAcceptModal" @bind-disabled="IsResetAcceptModalDisabled" @bind-disabled:event="onchange">Reset Data</button>
-
-<button class="btn custom-btn" @onclick="test" >test</button>
